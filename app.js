@@ -11,8 +11,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var reload = require('reload');
-var http = require('http');
 
 
 
@@ -46,9 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-//
-var server = http.createServer(app)
-reload(server, app, 10, 10)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
