@@ -13,6 +13,8 @@
     "express": "~4.13.1",
     "mongoose": "^4.3.5",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "reload": "^0.7.0",
+    "serve-favicon": "~2.3.0",
+    "supervisor": "^0.9.1"
   }
 }
